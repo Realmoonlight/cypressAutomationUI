@@ -1,0 +1,19 @@
+{
+  "name": "cypressautomationui",
+  "version": "1.0.0",
+  "description": "Cypress Automation UI",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open --e2e --browser chrome"
+  },
+  "keywords": [],
+  "author": "Tetiana Krasnova ",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.3",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "prettier": "^3.2.4"
+  }
+}

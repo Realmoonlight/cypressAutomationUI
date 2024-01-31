@@ -1,14 +1,22 @@
-describe("textBox", () => {
-        it("test", () => {
-            cy.visit("https://uitestingplayground.com/textinput")
-            cy.get("input.form-control").type('Hello world')
-            cy.get('#updatingButton').click()
-            cy.contains('button', 'Hello world')
-            cy.get('#updatingButton').should('have.text', 'Hello world')
-            cy.get('#updatingButton').then(element =>{
-                expect(element.text()).to.eq('Hello world')
+import{TextBoxPage} from "../../pages/TextBox"
+describe('TextBox', () => {
+    beforeEach(() => {
+        cy.visit((`${Cypress.env('demoQA')}/text-box`))
+    })
+    it('TextBox', ()=>{
+        cy.get('#userName').type('test')
+        cy.get('#userEmail').type('test@test.com')
+        cy.get('#currentAddress-wrapper').type('1234 test address')
+        cy.get('#permanentAddress-wrapper').type('1234 test address')
+        cy.get('#submit').click()
+        cy.get('#output')
+        cy.get('#name.mb-1').should("include.text", "test")
+        cy.get('#email.mb-1').should("include.text", "test@test.com")
+        cy.get("#currentAddress.mb-1").should("include.text", "1234 test address");
+        cy.get("#permanentAddress.mb-1").should("include.text", "1234 test address");
 
-            })
-            
-        })
-})
+    })
+    it('Text Box PageObject', () =>{
+        TextBoxPage.submitTBButton ()
+    })
+});

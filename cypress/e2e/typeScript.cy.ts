@@ -32,7 +32,7 @@ function fullName(a:stringTestType,b:stringTestType):void {
     console.log('My full name is ' + a.lastName + ' ' + b.firstName);
 }
 let obj = {
-    key:val
+    // key:valume
 }
 string2(2,"2")
 string2(2,2)
@@ -48,7 +48,7 @@ string2(2,2)
 // obj.a
 
 
-Message qa-automation-ui
+// Message qa-automation-ui
 
 
 

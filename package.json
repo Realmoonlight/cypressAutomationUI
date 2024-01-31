@@ -7,7 +7,7 @@
     "open": "cypress open --e2e --browser chrome"
   },
   "keywords": [],
-  "author": "Tetiana Krasnova ",
+  "author": "Tetiana Krasnova",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.6.3",

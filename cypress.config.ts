@@ -11,7 +11,8 @@ export default defineConfig({
       prod: 'https://coding.pasv.us/cours',
       test: 'Hello World!',
       base: 'https://uitestingplayground.com',
-      play1: 'https://play1.automationcamp.ir/expected_conditions.html'
+      play1: 'https://play1.automationcamp.ir/expected_conditions.html',
+      demoQA:'https://demoqa.com'
       },
   },
 defaultCommandTimeout: 17_000, 

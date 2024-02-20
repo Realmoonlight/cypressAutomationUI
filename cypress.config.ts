@@ -12,7 +12,8 @@ export default defineConfig({
       test: 'Hello World!',
       base: 'https://uitestingplayground.com',
       play1: 'https://play1.automationcamp.ir/expected_conditions.html',
-      demoQA:'https://demoqa.com'
+      demoQA:'https://demoqa.com',
+      herokuapp: 'https://the-internet.herokuapp.com'
       },
   },
 defaultCommandTimeout: 17_000, 

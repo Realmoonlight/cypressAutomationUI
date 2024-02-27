@@ -1,4 +1,5 @@
 name: Cypress Action Guide
+
 on: push
 
 jobs: 

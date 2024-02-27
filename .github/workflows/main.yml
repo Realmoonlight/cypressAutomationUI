@@ -1,6 +1,4 @@
 name: Cypress Action Guide
-description: Run Cypress Tests
-
 on: push
 
 jobs: 
